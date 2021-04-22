@@ -25,8 +25,8 @@ public class MyConfig {
         ComboPooledDataSource dataSource = new ComboPooledDataSource(); // подключение к БД
         try {
             dataSource.setDriverClass("com.mysql.cj.jdbc.Driver"); // драйвер
-            dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC"); // база
-            //dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/my_db?useSSL=false");
+            //dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC"); // база
+            dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/my_db?useSSL=false");
             dataSource.setUser("bestuser");
             dataSource.setPassword("bestuser");
 
